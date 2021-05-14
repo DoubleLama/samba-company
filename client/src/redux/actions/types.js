@@ -1,0 +1,4 @@
+export const GET_SITES = 'GET_SITES'
+export const GET_MAINTENANCES = 'GET_MAINTENANCES'
+export const GET_CREATIONS = 'GET_CREATIONS'
+export const REMOVE_ALL = 'REMOVE_ALL'

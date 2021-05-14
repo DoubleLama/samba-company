@@ -1,0 +1,44 @@
+.homepage {
+  width: 100%;
+  padding: 0 10%;
+  background-color: $primary;
+  display: flex;
+  justify-content: space-evenly;
+  
+  &__title {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+    font-family: $font-secondary;
+    color: $white;
+    text-align: right;
+    &--devis {
+      z-index: 2;
+      font-family: $font-special;
+      align-self: center;
+      width: 50%;
+      background-color: $secondary;
+      border: none;
+      border-radius: $br;
+      font-size: 2.8rem;
+      line-height: 200%;
+      transition: all ease-in-out 0.25s;
+      text-decoration: none;
+      color: $black;
+      text-align: center;
+      &:hover {
+        color: $black;
+        transform: scale(1.05,1.05);
+        transition: all ease-in-out 0.25s;
+        box-shadow: $smooth-shadow;
+      }
+    }
+  }
+
+  &__img {
+    height: 45rem;
+    z-index: 2;
+  }
+}

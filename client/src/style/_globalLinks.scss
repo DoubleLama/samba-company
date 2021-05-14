@@ -1,0 +1,25 @@
+.linksGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  &__btn {
+    transition: all ease-in-out 0.25s;
+    font-size: 1.6rem;
+    line-height: 150%;
+    height: auto;
+    margin: 0 2rem;
+    padding: 1rem;
+    border-radius: $br;
+    text-decoration: none;
+    font-family: $font-special;
+    border: $primary 1px solid;
+    &:hover, &.active {
+      color: $black;
+      transform: scale(1.05,1.05);
+      transition: all ease-in-out 0.25s;
+      box-shadow: $smooth-shadow;
+      background-color: $secondary;
+      border: $secondary 1px solid;
+    }
+  }
+}

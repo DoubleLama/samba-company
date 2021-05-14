@@ -1,0 +1,93 @@
+.maintenance, .creation , .contact{
+  z-index: 1;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 110%;
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+  
+  &__display {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--img {
+      width: 45%;
+    }
+  }
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $gray-100;
+    border-radius: $br;
+    
+    & .table__row {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      width:60rem;
+      background-color: $gray-100;
+
+      position: relative;
+      &:before{ 
+        content : "";
+        position: absolute;
+        left    : 5%;
+        bottom  : 0;
+        height  : 1px;
+        width   : 90%;
+        border-bottom: 1px solid $gray-400;  
+      }
+
+      &--notions {
+        margin-left: 2rem;
+        &:before{
+          content : "";
+          position: absolute;
+          left    : 5%;
+          bottom  : 0;
+          height  : 0;
+          width   : 0;
+          border: none;
+        }
+      }
+
+      &--col {
+        padding: 1rem;
+
+        
+        &-desc {
+          margin-left: 2rem;
+        }
+        
+        &-price {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10rem;
+          height: 100%;
+        }
+
+        &-svg {
+          vertical-align: bottom;
+          font-size: 3.5rem;
+        }
+
+        &-value {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 25rem;
+          height: 100%;
+        }
+      }
+    } 
+  }
+}

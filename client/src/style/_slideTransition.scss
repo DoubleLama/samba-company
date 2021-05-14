@@ -1,0 +1,97 @@
+// .pageSlider {
+
+//   &-exit {
+
+//     &.page {
+//       z-index: 1;
+//     }
+
+//     &--left{
+
+//       &.page {
+//         transform: translate3d(-100%, 0, 0);
+//       }
+//     }
+
+//     &--right{
+
+//       &.page {
+//         transform: translate3d(100%, 0, 0);
+//       }
+//     }
+//   }
+
+//   &-enter {
+//     transform: translate3d(0, 0, 0);
+//     transition: all 0.8s ease-in-out;
+//     &-active {
+//       transform: translate3d(0, 0, 0);
+//       transition: all 0.8s ease-in-out;
+//     }
+
+//     &.page {
+//       z-index: 10;
+//     }
+
+//     &--left{
+
+//       &.page {
+//         transform: translate3d(100%, 0, 0);
+//       }
+//     }
+
+//     &--right{
+//       &.page {
+//         transform: translate3d(-100%, 0, 0);
+//       }
+//     }
+//   }
+// }
+
+// .pageSlider-exit > .page {
+//   z-index: 1;
+// }
+
+// .pageSlider-enter > .page {
+//   z-index: 10;
+// }
+
+// .pageSlider-enter.left > .page {
+//   transform: translate3d(100%, 0, 0);
+// }
+
+// .pageSlider-enter.right > .page {
+//   transform: translate3d(-100%, 0, 0);
+// }
+
+// .pageSlider-exit.left > .page {
+//   transform: translate3d(-100%, 0, 0);
+// }
+
+// .pageSlider-exit.right > .page {
+//   transform: translate3d(100%, 0, 0);
+// }
+
+// .pageSlider-enter.pageSlider-enter-active > .page {
+//   transform: translate3d(0, 0, 0);
+//   transition: all 800ms ease-in-out;
+// }
+
+
+// .pageSlider {
+//   &-enter {
+//   opacity: 0;
+//     &-active {
+//       opacity: 1;
+//       transition: opacity 0.5s ease-in;
+//     }
+//   }
+
+//   &-exit {
+//     opacity: 1;
+//     &-active {
+//       opacity: 0;
+//       transition: opacity 0.5s ease-in;
+//     }
+//   }
+// }

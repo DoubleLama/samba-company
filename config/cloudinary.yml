@@ -1,0 +1,10 @@
+---
+production:
+ cloud_name: samba-company
+ api_key: '738684358182221'
+ api_secret: nKih1z8t427nlRZKA4lBDfwxSRc
+ secure: true
+ cdn_domain: true
+ use_filename: true
+ folder: sambacompany
+

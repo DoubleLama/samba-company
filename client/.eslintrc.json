@@ -1,0 +1,43 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "react-app",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-redux/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "react-redux"
+  ],
+  "rules": {
+    "react-redux/prefer-separate-component-file": 0,
+    "no-console": "off",
+    "import/no-named-as-default": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "trailingComma": "es5",
+        "semi": false,
+        "jsxSingleQuote": true,
+        "singleQuote": true,
+        "useTabs": false
+      }
+    ]
+  }
+}
