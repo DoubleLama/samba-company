@@ -25,6 +25,9 @@ const App = () => {
   //   return pathArr.length
   // }
   useEffect(() => {
+    console.log(
+      "En fouillant ici j'espère que vous trouverez votre bonheur ^^ ❤️"
+    )
     store.dispatch(getSites())
     store.dispatch(getMaintenances())
     store.dispatch(getCreations())
