@@ -1,8 +1,8 @@
 // n is number of stars required
 @function multiple-box-shadowNav($n) {
-  $value: '#{random(500)}rem #{random(29)}rem #FFF';
+  $value: '#{random(500)}rem #{random(74)}rem #FFF';
   @for $i from 2 through $n {
-  $value: '#{$value} , #{random(500)}rem #{random(29)}rem #FFF'
+  $value: '#{$value} , #{random(500)}rem #{random(74)}rem #FFF'
   }
   @return unquote($value);
 }
