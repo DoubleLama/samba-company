@@ -8,9 +8,12 @@ const Home = () => {
       <section className='homepage'>
         <div className='homepage__title'>
           <h1>Créateur de site internet depuis 2020</h1>
+          <br />
           <h2>
-            Vous pouvez aussi compter sur nous pour du dépannage informatique
+            Maintenant vous pouvez aussi compter sur nous pour du dépannage
+            informatique
           </h2>
+          <br />
           <br />
           <a
             className='homepage__title--devis'

@@ -21,9 +21,16 @@ const Sites = (props) => {
           alt={site.name}
           className='sitesContainer__card--img'
         />
-        <p>{site.name}</p>
-        <p>{site.date}</p>
-        <p>{site.status}</p>
+        <div className='sitesContainer__card--desc'>
+          <p className='sitesContainer__card--desc-title'>{site.name}</p>
+          <p>Commencé en : {site.date}</p>
+          <p>
+            Etat :{' '}
+            <span className={`sitesContainer__card--desc-status${site.status}`}>
+              {site.statusSlug}
+            </span>
+          </p>
+        </div>
       </a>
     ))
 

@@ -26,7 +26,7 @@ const Maintenances = (props) => {
     <div className='maintenance'>
       <h1 className='maintenance__title'>Dépannage informatique</h1>
       <div className='maintenance__display'>
-        <div className='maintenance__table'>
+        <div className='maintenance__display--table'>
           {mapMaintenances}
           <div className='table__row'>
             <h4 className='table__row--notions'>
@@ -36,9 +36,9 @@ const Maintenances = (props) => {
           </div>
         </div>
         <img
+          className='maintenance__display--img'
           src={repair}
           alt='creationsvg'
-          className='maintenance__display--img'
         />
       </div>
       <GlobalLinks />

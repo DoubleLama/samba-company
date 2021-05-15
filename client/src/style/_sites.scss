@@ -15,12 +15,14 @@
 		transform:         translateY(-15px)
 	}
 }
+
 .sitesContainer {
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0 5rem;
+
   &__title{
     text-align: center;
     width: 100%;
@@ -38,8 +40,8 @@
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
     -webkit-transition-property: transform;
     transition-property: transform;
 
@@ -54,8 +56,8 @@
       opacity: 0;
       background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
       background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
       -webkit-transition-property: transform, opacity;
       transition-property: transform, opacity;
     }
@@ -63,7 +65,15 @@
     &:hover, &:focus, &:active {
       -webkit-transform: translateY(-5px);
       transform: translateY(-5px);
-      border: 1px solid $secondary;
+      border: 1px solid $primary;
+      transition: all 0.5s ease-in-out; 
+
+      .sitesContainer__card--desc {
+        width: 100%;
+        transition: all 0.5s ease-in-out;        
+        opacity:1;
+        background: #000000bf;
+      }
     }
 
     &:hover:before, &:focus:before, &:active:before {
@@ -73,8 +83,52 @@
     }
 
     &--img {
-      width: 100%
+      width: 100%;
+      border-radius: $br;
+    }
+
+    &--desc {
+      border-radius: $br;
+      font-size: 2rem;
+      line-height: 200%;
+      position: absolute;
+      top: 0;
+      opacity:0;
+      left: 0;
+      height: 100%;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &-title {
+        font-family: $font-special;
+        font-size: 3rem;
+        color: $secondary;
+      }
+
+      &-statusDone {
+        color: $teal
+      }
+      &-statusEnding {
+        color: $yellow
+      }
+      &-statusProgress {
+        color: $orange
+      }
+      &-statusProject {
+        color: $primary
+      }
     }
   }
+}
 
+@media screen and (max-width: 980px){
+  .sitesContainer {
+    flex-direction: column;
+
+    &__card{
+      width: 90%; 
+    }
+  }
 }

@@ -1,12 +1,14 @@
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: $primary;
   padding: 2rem;
   width: 100%;
-  transition: 0.2s;
+  transition: all ease-in-out 0.25s;
+
   &__logo {
     height: 25rem;
+    width: auto;
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -42,6 +44,42 @@
         box-shadow: none;
         background-color: $primary;
         transform: none;
+      }
+    }
+  }
+ 
+}
+
+@media screen and (max-width: 980px){
+  .navbar {
+    padding: 1rem 0;
+    &__logo {
+      width: 18rem;
+      margin-right: 2.5rem;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    &__navlinks {
+      margin: 0 2rem;
+      &--item {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px){
+  .navbar {
+    padding: 0;
+    display: block;
+    &__logo {
+      width: 10rem;
+      height: auto;
+    }
+    &__navlinks {
+      margin: 0 2rem;
+      &--item {
+        margin: 0 0.3rem;
+        font-size: 1rem;
       }
     }
   }

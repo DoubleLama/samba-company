@@ -25,12 +25,12 @@ const Creations = (props) => {
   return (
     <div className='creation'>
       <h1 className='creation__title'>Creation de site internet</h1>
-      <div className='maintenance__display'>
-        <div className='maintenance__table'>{mapCreations}</div>
+      <div className='creation__display'>
+        <div className='creation__display--table'>{mapCreations}</div>
         <img
           src={create}
           alt='creationsvg'
-          className='maintenance__display--img'
+          className='creation__display--img'
         />
       </div>
       <GlobalLinks />

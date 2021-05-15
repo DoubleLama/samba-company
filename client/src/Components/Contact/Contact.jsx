@@ -4,12 +4,12 @@ import GlobalLinks from '../GlobalLinks/GlobalLinks'
 import contact from '../../assets/images/contact.svg'
 
 const Contact = () => {
-  const fontSize = 48
+  const fontSize = window.screen.width > 350 ? 48 : 64
   return (
     <div className='contact'>
       <h1 className='contact__title'>Contacts</h1>
       <div className='contact__display'>
-        <div className='contact__table'>
+        <div className='contact__display--table'>
           <div className='table__row'>
             <div className='table__row--col'>
               <Mail style={{ fontSize, color: '#8fd0ee' }} />
@@ -27,7 +27,7 @@ const Contact = () => {
               <WhatsApp style={{ fontSize, color: '#2BB140' }} />
             </div>
             <div className='table__row--col-value'>
-              <a href='callto:+33756989002'>07 56 98 90 02</a>
+              <a href='tel:+33756989002'>07 56 98 90 02</a>
             </div>
           </div>
           <div className='table__row'>
@@ -60,9 +60,9 @@ const Contact = () => {
           </div>
         </div>
         <img
+          className='contact__display--img'
           src={contact}
           alt='creationsvg'
-          className='maintenance__display--img'
         />
       </div>
       <GlobalLinks />

@@ -72,8 +72,9 @@ ActiveRecord::Schema.define(version: 2021_05_14_072736) do
   create_table "websites", force: :cascade do |t|
     t.string "name"
     t.string "url"
-    t.date "date"
+    t.string "date"
     t.string "status"
+    t.string "statusSlug"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

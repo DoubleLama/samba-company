@@ -106,11 +106,6 @@ $escaped-characters: (
 
 // Fonts
 @font-face {
-  font-family: 'Poppins';
-  src: local('Poppins'), url('../assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Arimo';
   src: local('Arimo'), url('../assets/fonts/arimo/Arimo-VariableFont_wght.ttf') format('truetype');
 }
@@ -121,11 +116,7 @@ $escaped-characters: (
 }
 
 $font-primary: (
-  'Poppins',
-);
-
-$font-secondary: (
-  'Arimo'
+  'Arimo',
 );
 
 $font-special: (
@@ -150,11 +141,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  font-family: $font-primary, sans-serif;
   color: $dark;
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 980px){
+  body{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  body{
+    font-size: 1.6rem;
+  }
+}
 #root {
   max-width: 1920px;
 }
@@ -175,11 +176,11 @@ $br: (
 );
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .container {

@@ -3,16 +3,27 @@ Creation.destroy_all
 Maintenance.destroy_all
 
 Website.create([
-                 { name: 'Only Bloc', url: 'http://only-bloc.herokuapp.com/', date: '03/2020',
-                   status: 'démonstration' },
-                 { name: 'SimpleLoc', url: 'https://simpleloc.herokuapp.com/', date: '06/2020',
-                   status: 'démonstration' },
-                 { name: 'French Country Houses', url: 'https://www.frenchcountryhouses.com/', date: '10/2020',
-                   status: 'terminé' },
-                 { name: 'Bodylicious', url: 'https://www.bodylicious-resa.fr/', date: '12/2020', status: 'en cours' },
-                 { name: 'Cotoune', url: 'https://www.cotoune.com/', date: '02/2021', status: 'finalisation' },
-                 { name: 'Atelier JK', url: 'https://www.atelierjk.fr/', date: '04/2021', status: 'en cours' },
-                 { name: 'Samba Company', url: 'https://www.samba-company.fr', date: '05/2021', status: 'terminé' }
+                 { name: 'Samba Company', url: 'https://www.samba-company.fr', date: 'Mai 2021',
+                   status: 'Done',
+                   statusSlug: 'livré' },
+                 { name: 'French Country Houses', url: 'https://www.frenchcountryhouses.com/', date: 'Octobre 2020',
+                   status: 'Done',
+                   statusSlug: 'livré' },
+                 { name: 'Cotoune', url: 'https://www.cotoune.com/', date: 'Février 2021',
+                   status: 'Ending',
+                   statusSlug: 'fin de développement' },
+                 { name: 'Atelier JK', url: 'https://www.atelierjk.fr/', date: 'Avril 2021',
+                   status: 'Progress',
+                   statusSlug: 'développement' },
+                 { name: 'Bodylicious', url: 'https://www.bodylicious-resa.fr/', date: 'Décembre 2020',
+                   status: 'Progress',
+                   statusSlug: 'développement' },
+                 { name: 'Only Bloc', url: 'http://only-bloc.herokuapp.com/', date: 'Mars 2020',
+                   status: 'Project',
+                   statusSlug: 'projet' },
+                 { name: 'SimpleLoc', url: 'https://simpleloc.herokuapp.com/', date: 'Juin 2020',
+                   status: 'Project',
+                   statusSlug: 'projet' }
                ])
 
 websites = Website.all
@@ -39,7 +50,7 @@ Creation.create([
                   { title: 'Achat/gestion de nom de domaine', description: 'Obligatoire pour tout site',
                     price: 'à partir de 4€/an' },
                   { title: 'Hébergement du site', description: 'Comprend la maintenance du site à hauteur de 20h/an (cumulable)',
-                    price: '200€/an' },
+                    price: '280€/an' },
                   { title: 'Création de site vitrine', description: 'Temps de création entre 2 jours et une semaine selon la complexité',
                     price: 'à partir de 500€' },
                   { title: 'Site web plus complexe Ruby on Rails et base de donnée',

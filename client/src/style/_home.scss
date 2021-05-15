@@ -11,19 +11,17 @@
     flex-direction: column;
     justify-content: space-evenly;
     margin: 5rem 0;
-    font-family: $font-secondary;
     color: $white;
-    text-align: right;
+    text-align: center;
     &--devis {
       z-index: 2;
       font-family: $font-special;
       align-self: center;
-      width: 50%;
+      padding: 1.5rem;
       background-color: $secondary;
       border: none;
       border-radius: $br;
       font-size: 2.8rem;
-      line-height: 200%;
       transition: all ease-in-out 0.25s;
       text-decoration: none;
       color: $black;
@@ -38,7 +36,15 @@
   }
 
   &__img {
-    height: 45rem;
     z-index: 2;
+    height: 45rem;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .homepage {
+    &__img {
+      display: none;
+    }
   }
 }

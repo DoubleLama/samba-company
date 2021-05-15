@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='starsFoot2' />
       <div className='starsFoot3' />
       <div className='footer'>
-        <p>Made with ❤️ by Samba Company™ 2021</p>
+        <p className='footer__text'>Made with ❤️ by Samba Company™ 2021</p>
       </div>
     </>
   )
