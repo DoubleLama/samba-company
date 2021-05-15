@@ -26,7 +26,14 @@ const Creations = (props) => {
     <div className='creation'>
       <h1 className='creation__title'>Creation de site internet</h1>
       <div className='creation__display'>
-        <div className='creation__display--table'>{mapCreations}</div>
+        <div className='creation__display--table'>
+          {mapCreations}
+          <div className='table__row'>
+            <h4 className='table__row--notions'>
+              <br />* Obligatoire pour tout site.
+            </h4>
+          </div>
+        </div>
         <img
           src={create}
           alt='creationsvg'
