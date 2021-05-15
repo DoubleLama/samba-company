@@ -6,24 +6,26 @@ import PropTypes from 'prop-types'
 const Sites = (props) => {
   const { sites } = props
 
-  const mapSites = sites.map((site) => (
-    <a
-      href={site.url}
-      target='_blank'
-      rel='noreferrer'
-      key={uuid()}
-      className='sitesContainer__card'
-    >
-      <img
-        src={site.image}
-        alt={site.name}
-        className='sitesContainer__card--img'
-      />
-      <p>{site.name}</p>
-      <p>{site.date}</p>
-      <p>{site.status}</p>
-    </a>
-  ))
+  const mapSites = sites
+    .sort((a, b) => a.id > b.id)
+    .map((site) => (
+      <a
+        href={site.url}
+        target='_blank'
+        rel='noreferrer'
+        key={uuid()}
+        className='sitesContainer__card'
+      >
+        <img
+          src={site.image}
+          alt={site.name}
+          className='sitesContainer__card--img'
+        />
+        <p>{site.name}</p>
+        <p>{site.date}</p>
+        <p>{site.status}</p>
+      </a>
+    ))
 
   return (
     <div>

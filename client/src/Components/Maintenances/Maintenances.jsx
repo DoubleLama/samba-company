@@ -8,17 +8,19 @@ import repair from '../../assets/images/repair.svg'
 const Maintenances = (props) => {
   const { maintenances } = props
 
-  const mapMaintenances = maintenances.map((maintenance) => (
-    <div key={uuid()} className='table__row'>
-      <div className='table__row--col'>
-        <h3>{maintenance.title}</h3>
-        <p className='table__row--col-desc'>{maintenance.description}</p>
+  const mapMaintenances = maintenances
+    .sort((a, b) => a.id > b.id)
+    .map((maintenance) => (
+      <div key={uuid()} className='table__row'>
+        <div className='table__row--col'>
+          <h3>{maintenance.title}</h3>
+          <p className='table__row--col-desc'>{maintenance.description}</p>
+        </div>
+        <div className='table__row--col'>
+          <p className='table__row--col-price'>{maintenance.price}</p>
+        </div>
       </div>
-      <div className='table__row--col'>
-        <p className='table__row--col-price'>{maintenance.price}</p>
-      </div>
-    </div>
-  ))
+    ))
 
   return (
     <div className='maintenance'>

@@ -8,17 +8,19 @@ import create from '../../assets/images/create.svg'
 const Creations = (props) => {
   const { creations } = props
 
-  const mapCreations = creations.map((creation) => (
-    <div key={uuid()} className='table__row'>
-      <div className='table__row--col'>
-        <h3>{creation.title}</h3>
-        <p className='table__row--col-desc'>{creation.description}</p>
+  const mapCreations = creations
+    .sort((a, b) => a.id > b.id)
+    .map((creation) => (
+      <div key={uuid()} className='table__row'>
+        <div className='table__row--col'>
+          <h3>{creation.title}</h3>
+          <p className='table__row--col-desc'>{creation.description}</p>
+        </div>
+        <div className='table__row--col'>
+          <p className='table__row--col-price'>{creation.price}</p>
+        </div>
       </div>
-      <div className='table__row--col'>
-        <p className='table__row--col-price'>{creation.price}</p>
-      </div>
-    </div>
-  ))
+    ))
 
   return (
     <div className='creation'>
