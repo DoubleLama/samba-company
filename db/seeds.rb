@@ -36,11 +36,14 @@ websites.each do |website|
 end
 
 Maintenance.create([
-                     { title: "Réinstallation du système d'exploitation*", description: '', price: '50€' },
-                     { title: "Réinitialisation du système d'exploitation*", description: '', price: '50€' },
+                     { title: "Réinstallation du système d'exploitation*",
+                       description: 'votre ordinateur ne démarre plus', price: '50€' },
+                     { title: "Restauration du système d'exploitation*",
+                       description: 'votre ordinateur démarre mais est très lent ou présente de lourds disfonctionnements ', price: '50€' },
+                     { title: 'Configuration de messagerie', description: '', price: '20€' },
                      { title: 'Installation et/ou configuraition de logiciel', description: '', price: '25€' },
                      { title: 'Installation et/ou configuraition de périphérique', description: '', price: '25€' },
-                     { title: 'Configuration de messagerie', description: '', price: '20€' },
+                     { title: "Nettoyage complet d'un ordinateur infecté par un virus", description: '', price: '40€' },
                      { title: 'Modification et/ou mise à jour du matériel informatique', description: '',
                        price: '30€/h' },
                      { title: 'Problème informatique autre', description: 'sur diagnostic gratuit', price: '25€/h' }
