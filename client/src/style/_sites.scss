@@ -1,32 +1,10 @@
-@keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
-	}
-	40% {
-		-webkit-transform: translateY(-30px);
-		-ms-transform:     translateY(-30px);
-		transform:         translateY(-30px)
-	}
-	60% {
-		-webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
-	}
-}
-
 .sitesContainer {
   z-index: 2;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 0 5rem;
-
   &__title{
-    text-align: center;
     width: 100%;
-    line-height: 200%;
   }
   &__card{
     width: 40rem;

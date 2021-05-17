@@ -1,0 +1,31 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+  height: 60vh;
+  &__title {
+    z-index: 2;
+    margin: 5rem 0;
+    font-size: large;
+    color: $white;
+    letter-spacing: 1px;
+    font-family: $font-special;
+  }
+  &__img {
+    z-index: 2;
+    margin: 5rem 0 10rem 0;
+    width: 30rem;
+    animation: logoSpin infinite 60s linear;
+  }
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

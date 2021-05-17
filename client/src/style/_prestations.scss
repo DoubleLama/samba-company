@@ -1,11 +1,8 @@
 .maintenance, .creation , .contact{
   z-index: 2;
-  margin: 5rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  height: 110%;
 
   &__title {
     z-index: 2;
@@ -30,9 +27,10 @@
       border: 1px solid $gray-100;
       border-radius: $br;
       width: 100%;
+
       & .table__row {
-        justify-content: space-between;
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
         background-color: $gray-100;
         padding: 1rem;
@@ -54,14 +52,13 @@
         
         &--col {
           &-desc {
-            margin-left: 2rem;
+            margin: 0 2rem;
           }
           
           &-price {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: right;
             height: 100%;
+            width: 12rem;
           }
           
           &-svg {
@@ -70,8 +67,9 @@
           
           &-value {
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
+            font-size: large;
             height: 100%;
           }
         }
@@ -92,21 +90,6 @@
         margin-left: 0;
         align-items: center;
         width: 100%;
-      }
-      
-      &--table {
-        & .table__row {
-          min-width: 100%;
-          justify-content: space-between;
-
-          &--col {
-            flex: 1 1 auto;
-
-            &-value {
-              // font-size: 2.8rem;
-            }
-          }
-        } 
       }
     }
   }

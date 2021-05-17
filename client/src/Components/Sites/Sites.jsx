@@ -35,13 +35,9 @@ const Sites = (props) => {
     ))
 
   return (
-    <div>
-      <section className='container'>
-        <div className='sitesContainer'>
-          <h1 className='sitesContainer__title'>Nos créations</h1>
-          {mapSites}
-        </div>
-      </section>
+    <div className='sitesContainer'>
+      <h1 className='sitesContainer__title'>Nos créations</h1>
+      {mapSites}
     </div>
   )
 }

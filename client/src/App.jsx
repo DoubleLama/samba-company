@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Provider } from 'react-redux'
-import { Switch, Route, useLocation, BrowserRouter } from 'react-router-dom'
-// import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { Switch, Route, useLocation } from 'react-router-dom'
 import Home from './Components/Layouts/Home'
 import store from './redux/store'
 import { getSites } from './redux/actions/siteActions'
@@ -13,17 +12,10 @@ import Sites from './Components/Sites/Sites'
 import getMaintenances from './redux/actions/maintenanceActions'
 import getCreations from './redux/actions/creationActions'
 import Footer from './Components/Layouts/Footer'
+import NotFound from './Components/Layouts/NotFound'
 
 const App = () => {
   const location = useLocation()
-  // const [prevDepth, setPrevDepth] = useState(0)
-  // const timeout = 500
-  // const currentKey = location.pathname.split('/')[1] || '/'
-  // const getPathDepth = (x) => {
-  //   const pathArr = x.pathname.split('/')
-  //   pathArr.filter((n) => n !== '')
-  //   return pathArr.length
-  // }
   useEffect(() => {
     console.log(
       "En fouillant ici j'espère que vous trouverez votre bonheur ^^ ❤️"
@@ -31,37 +23,19 @@ const App = () => {
     store.dispatch(getSites())
     store.dispatch(getMaintenances())
     store.dispatch(getCreations())
-    // setPrevDepth(getPathDepth(location))
   }, [])
   return (
     <Provider store={store}>
-      {/* <TransitionGroup component='div' className='App'>
-        <CSSTransition
-          key={currentKey}
-          timeout={timeout}
-          className='pageSlider'
-          mountOnEnter={false}
-          unmountOnExit
-        >
-          <div
-            className={
-              getPathDepth(location) - prevDepth >= 0 ? 'left' : 'right'
-            }
-          > */}
       <Navbar />
-      <BrowserRouter>
-        <Switch location={location}>
-          <Route exact path='/' component={Home} />
-          <Route path='/creation' component={Creation} />
-          <Route path='/maintenance' component={Maintenance} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/sites' component={Sites} />
-        </Switch>
-      </BrowserRouter>
+      <Switch location={location}>
+        <Route exact path='/' component={Home} />
+        <Route path='/creation' component={Creation} />
+        <Route path='/maintenance' component={Maintenance} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/sites' component={Sites} />
+        <Route path='*' component={NotFound} />
+      </Switch>
       <Footer />
-      {/* </div>
-        </CSSTransition>
-      </TransitionGroup> */}
     </Provider>
   )
 }

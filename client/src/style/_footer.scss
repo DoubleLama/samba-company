@@ -4,7 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+  font-family: $font-special;
+
   &__text {
     z-index: 2;
   }

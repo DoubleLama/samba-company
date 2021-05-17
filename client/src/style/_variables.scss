@@ -140,7 +140,6 @@ body {
   font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
   color: $dark;
   font-size: 1.6rem;
 }
@@ -156,6 +155,7 @@ body {
     font-size: 1.6rem;
   }
 }
+
 #root {
   max-width: 1920px;
 }
@@ -176,25 +176,20 @@ $br: (
 );
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  line-height: 200%;
+  text-align: center;
 }
 
 h2 {
-  font-size: 1.5rem;
-}
-
-.container {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.border {
-  border: 1px solid black;
+  font-size: 3rem;
 }
 
 a {
   text-decoration: none;
   color: $dark;
+}
+
+.border {
+  border: 1px solid black;
 }
