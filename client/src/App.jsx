@@ -13,6 +13,7 @@ import getMaintenances from './redux/actions/maintenanceActions'
 import getCreations from './redux/actions/creationActions'
 import Footer from './Components/Layouts/Footer'
 import NotFound from './Components/Layouts/NotFound'
+import CV from './Components/CV/CV'
 
 const App = () => {
   const location = useLocation()
@@ -33,6 +34,7 @@ const App = () => {
         <Route path='/maintenance' component={Maintenance} />
         <Route path='/contact' component={Contact} />
         <Route path='/sites' component={Sites} />
+        <Route path='/cv' component={CV} />
         <Route path='*' component={NotFound} />
       </Switch>
       <Footer />
