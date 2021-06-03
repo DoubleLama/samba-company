@@ -51,8 +51,9 @@ export const CV = () => {
         <div className='abilities__table'>
           <h2 className='abilities__table--title'>COMPÉTENCES</h2>
           <div className='hobbies__table--content'>
-            <p>- Analyse des besoins (clients/utilisateurs)</p>
             <p>- Autonomie et initiative</p>
+            <p>- Curiosité </p>
+            <p>- Analyse des besoins (clients/utilisateurs)</p>
             <p>- Capacité d&apos;apprentissage</p>
             <p>- Travail d&apos;équipe</p>
           </div>
