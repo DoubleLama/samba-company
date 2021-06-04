@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Provider } from 'react-redux'
 import { Switch, Route, useLocation } from 'react-router-dom'
-import { SettingsVoiceTwoTone } from '@material-ui/icons'
 import Home from './Components/Layouts/Home'
 import store from './redux/store'
 import { getSites } from './redux/actions/siteActions'
@@ -19,17 +18,23 @@ import CV from './Components/CV/CV'
 const App = () => {
   const [cv, setCV] = useState(false)
   const location = useLocation()
+  const [firstTime, setFirstTime] = useState(true)
 
   useEffect(() => {
-    console.log(
-      "En fouillant ici j'espère que vous trouverez votre bonheur ^^ ❤️"
-    )
+    const init = () => {
+      console.log(
+        "En fouillant ici j'espère que vous trouverez votre bonheur ^^ ❤️"
+      )
+      setFirstTime(false)
+    }
 
     location.pathname.includes('/cv') ? setCV(true) : setCV(false)
+    firstTime ? init() : setFirstTime(false)
+
     store.dispatch(getSites())
     store.dispatch(getMaintenances())
     store.dispatch(getCreations())
-  }, [location.pathname])
+  }, [firstTime, location.pathname])
   return (
     <Provider store={store}>
       {!cv && <Navbar />}
