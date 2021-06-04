@@ -1,5 +1,11 @@
 import React from 'react'
-import { Phone, Mail } from '@material-ui/icons'
+import {
+  PlaceTwoTone,
+  MailTwoTone,
+  PhoneTwoTone,
+  CalendarTodayTwoTone,
+  DirectionsCarTwoTone,
+} from '@material-ui/icons'
 import hadrien from '../../assets/images/hadrien.jpg'
 
 export const CV = () => {
@@ -14,14 +20,14 @@ export const CV = () => {
           <div className='profil__table--content'>
             <h3 className='profil__table--content-title'>ADRESSE</h3>
             <p>
-              6 rue Ticky Holgado <br />
+              <PlaceTwoTone /> 6 rue Ticky Holgado <br />
               31200 TOULOUSE
             </p>
           </div>
           <div className='profil__table--content'>
             <h3 className='profil__table--content-title'>CONTACT</h3>
             <p>
-              <Mail />
+              <MailTwoTone />
               <a
                 className='profil__table--content-link'
                 href='mailto:hadrien.samouillan@gmail.com'
@@ -30,7 +36,7 @@ export const CV = () => {
               </a>
             </p>
             <p>
-              <Phone />
+              <PhoneTwoTone />
               <a
                 className='profil__table--content-link'
                 href='tel:+33627400108'
@@ -41,11 +47,15 @@ export const CV = () => {
           </div>
           <div className='profil__table--content'>
             <h3 className='profil__table--content-title'>DATE DE NAISSANCE</h3>
-            <p>10/01/1988</p>
+            <p>
+              <CalendarTodayTwoTone /> 10/01/1988
+            </p>
           </div>
           <div className='profil__table--content'>
             <h3 className='profil__table--content-title'>PERMIS</h3>
-            <p>Permis A & B + véhicules</p>
+            <p>
+              <DirectionsCarTwoTone /> Permis A & B + véhicules
+            </p>
           </div>
         </div>
         <div className='abilities__table'>
@@ -59,6 +69,14 @@ export const CV = () => {
           </div>
         </div>
         <div className='abilities__table'>
+          <h2 className='abilities__table--title'>LANGUES</h2>
+          <div className='hobbies__table--content'>
+            <p>- Français : langue maternelle</p>
+            <p>- Anglais : C1</p>
+            <p>- Espagnol : C1</p>
+          </div>
+        </div>
+        <div className='abilities__table'>
           <h2 className='abilities__table--title'>
             LANGAGES/
             <br />
@@ -66,12 +84,11 @@ export const CV = () => {
           </h2>
           <div className='hobbies__table--content'>
             <p>
-              - Ruby on Rails
-              <br />- Javascript
-              <br />- React.js (hooks, redux)
-              <br />- Github
+              - Ruby, Ruby on Rails
+              <br />- HTML, CSS (Sass)
+              <br />- Javascript, React.js (hooks, redux)
+              <br />- Git
               <br />- PostgreSQL
-              <br />{' '}
             </p>
           </div>
         </div>
