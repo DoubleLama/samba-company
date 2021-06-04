@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Provider } from 'react-redux'
 import { Switch, Route, useLocation } from 'react-router-dom'
+import { SettingsVoiceTwoTone } from '@material-ui/icons'
 import Home from './Components/Layouts/Home'
 import store from './redux/store'
 import { getSites } from './redux/actions/siteActions'
@@ -16,18 +17,22 @@ import NotFound from './Components/Layouts/NotFound'
 import CV from './Components/CV/CV'
 
 const App = () => {
+  const [cv, setCV] = useState(false)
   const location = useLocation()
+
   useEffect(() => {
     console.log(
       "En fouillant ici j'espère que vous trouverez votre bonheur ^^ ❤️"
     )
+
+    location.pathname.includes('/cv') ? setCV(true) : setCV(false)
     store.dispatch(getSites())
     store.dispatch(getMaintenances())
     store.dispatch(getCreations())
-  }, [])
+  }, [location.pathname])
   return (
     <Provider store={store}>
-      <Navbar />
+      {!cv && <Navbar />}
       <Switch location={location}>
         <Route exact path='/' component={Home} />
         <Route path='/creation' component={Creation} />
@@ -37,7 +42,7 @@ const App = () => {
         <Route path='/cv' component={CV} />
         <Route path='*' component={NotFound} />
       </Switch>
-      <Footer />
+      {!cv && <Footer />}
     </Provider>
   )
 }
