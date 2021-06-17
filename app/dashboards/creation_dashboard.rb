@@ -63,7 +63,7 @@ class CreationDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how creations are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(creation)
-  #   "Creation ##{creation.id}"
-  # end
+  def display_resource(creation)
+    creation.title
+  end
 end

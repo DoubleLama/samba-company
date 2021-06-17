@@ -26,7 +26,7 @@ module Admin
     end
 
     def destroy_image
-      image = requested_resource.image
+      image = @requested_resource.image
       image.purge
       redirect_back(fallback_location: requested_resource)
     end
@@ -44,5 +44,11 @@ module Admin
 
     # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
     # for more information
+
+    private
+
+    def set_resource
+      @requested_resource = Website.find(params[:website_id])
+    end
   end
 end

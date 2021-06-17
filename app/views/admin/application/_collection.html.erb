@@ -13,7 +13,7 @@
         )) do %>
         <%= t(
           "helpers.label.#{collection_presenter.resource_name}.#{attr_name}",
-          default: resource_class.human_attribute_name(attr_name),
+          default: attr_name.to_s,
         ).titleize %>
             <% if collection_presenter.ordered_by?(attr_name) %>
               <span class="cell-label__sort-indicator cell-label__sort-indicator--<%= collection_presenter.ordered_html_class(attr_name) %>">
@@ -53,6 +53,7 @@
             <% end -%>
           </td>
         <% end %>
+
         <% if valid_action? :edit, collection_presenter.resource_name %>
           <td><%= link_to(
             t("administrate.actions.edit"),
@@ -60,6 +61,7 @@
             class: "action-edit",
           ) if show_action? :edit, resource%></td>
         <% end %>
+
         <% if valid_action? :destroy, collection_presenter.resource_name %>
           <td><%= link_to(
             t("administrate.actions.destroy"),

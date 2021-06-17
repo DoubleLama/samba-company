@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  namespace :admin, only: %i[index show new create edit update destroy] do
-    %i[maintenances creations].each do |name|
-      resources name
+  namespace :admin do
+    [:maintenances,:creations].each do |name|
+      resources name, only: [:index, :show, :new, :create, :edit, :update, :destroy]
     end
 
-    resources :websites, only: %i[index show new create edit update destroy] do
+    resources :websites, only: [:index, :show, :new, :create, :edit, :update, :destroy] do
       delete :image, action: :destroy_image
     end
 

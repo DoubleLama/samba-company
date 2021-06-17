@@ -13,7 +13,9 @@ class WebsiteDashboard < Administrate::BaseDashboard
     url: Field::String,
     date: Field::Date,
     status: Field::String,
-    image: Field::ActiveStorage,
+    image: Field::ActiveStorage.with_options(destroy_url: proc do |_namespace, resource, attachment|
+      ["admin_category_image", { attachment_id: attachment.id, category_id: resource.id }]
+    end),
     created_at: Field::DateTime,
     updated_at: Field::DateTime
   }.freeze
@@ -28,6 +30,7 @@ class WebsiteDashboard < Administrate::BaseDashboard
     name
     url
     date
+    image
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -70,6 +73,6 @@ class WebsiteDashboard < Administrate::BaseDashboard
   # across all pages of the admin dashboard.
   #
   def display_resource(website)
-    "Website ##{website.id}"
+   website.name
   end
 end

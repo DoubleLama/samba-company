@@ -57,5 +57,5 @@ gem 'solargraph', '~> 0.40.4'
 gem 'cloudinary', '~> 1.20'
 
 # ActiveAdmin
-gem 'administrate', '~> 0.16.0'
+gem 'administrate', '~> 0.15.0'
 gem 'administrate-field-active_storage', '~> 0.3.6'

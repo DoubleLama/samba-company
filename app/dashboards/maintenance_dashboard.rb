@@ -63,7 +63,7 @@ class MaintenanceDashboard < Administrate::BaseDashboard
   # Overwrite this method to customize how maintenances are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(maintenance)
-  #   "Maintenance ##{maintenance.id}"
-  # end
+  def display_resource(maintenance)
+   maintenance.title
+  end
 end

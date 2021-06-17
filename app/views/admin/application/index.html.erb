@@ -16,7 +16,7 @@
   <% end %>
 
   <div>
-    <%# <%= link_to(
+    <%= link_to(
       t(
         "administrate.actions.new_resource",
         name: page.resource_name.titleize.downcase
@@ -24,7 +24,7 @@
       [:new, namespace, page.resource_path],
       class: "button",
     ) if valid_action?(:new) && show_action?(:new, new_resource) %>
-  </div> %>
+  </div>
 </header>
 
 <section class="main-content__body main-content__body--flush">

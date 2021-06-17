@@ -59,5 +59,5 @@ Creation.create([
                   { title: 'Site web plus complexe Ruby on Rails et base de donnée',
                     description: 'Il faut compter au minimum 1 mois (site E-commerce, gestion de rdv, gestion de réservation,...)', price: '300€/j' },
                   { title: 'Site web plus complexe Ruby on Rails, React.js et base de donnée',
-                    description: 'Il faut compter au minimum 1 mois (site E-commerce, gestion de rdv, gestion de réservation,...)', price: '375€/j' }
+                    description: 'Il faut compter au minimum 1 mois (site E-commerce, gestion de rdv, gestion de réservation,...)', price: '350€/j' }
                 ])
