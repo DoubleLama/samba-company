@@ -70,15 +70,22 @@
 @media screen and (max-width: 550px){
   .navbar {
     padding: 0;
+    margin: 0;
     display: block;
+    height: 20%;
+
     &__logo {
       width: 10rem;
+      margin: 0;
       height: auto;
     }
     &__navlinks {
-      margin: 0 2rem;
+      margin: 0;
+
       &--item {
+        text-align: center;
         margin: 0 0.3rem;
+        padding: 1rem 0.3rem;
         font-size: 1rem;
       }
     }

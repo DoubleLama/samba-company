@@ -13,6 +13,7 @@
     margin: 5rem 0;
     color: $white;
     text-align: center;
+
     &--devis {
       z-index: 2;
       font-family: $font-special;
@@ -26,6 +27,7 @@
       text-decoration: none;
       color: $black;
       text-align: center;
+      
       &:hover {
         color: $black;
         transform: scale(1.05,1.05);
