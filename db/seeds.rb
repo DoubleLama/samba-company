@@ -52,8 +52,8 @@ Maintenance.create([
 Creation.create([
                   { title: 'Achat/gestion de nom de domaine*', description: 'Obligatoire pour tout site',
                     price: 'à partir de 4€/an' },
-                  { title: 'Hébergement du site*', description: 'Comprend la maintenance du site à hauteur de 20h/an (cumulable)',
-                    price: '280€/an' },
+                  { title: 'Hébergement du site*', description: 'Comprend la maintenance du site à hauteur de 16h/an (cumulable)',
+                    price: '300€/an' },
                   { title: 'Création de site vitrine', description: 'Temps de création entre 2 jours et une semaine selon la complexité',
                     price: 'à partir de 500€' },
                   { title: 'Site web plus complexe Ruby on Rails et base de donnée',
