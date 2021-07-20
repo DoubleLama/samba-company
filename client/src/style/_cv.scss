@@ -19,7 +19,7 @@
     }
     
     &__table {
-      margin-top: 0.5rem;
+      margin-top: 0.38rem;
       padding: 0 2rem;
 
       &--title {
@@ -134,16 +134,17 @@
           }
 
           &--job {
-            padding: 0.8rem;
             width: 100%;
             justify-content: center;
             text-align: left;
-            
+            padding-block: 0.5rem;
+
             &-link {
               display: flex;
               align-items: center;
               padding-left: 5%;
-              margin-block: 0.5rem;
+              margin-bottom: 1rem;
+              padding-top: 1rem;
               text-decoration: underline;
               transition: all 0.3s ease-in-out;
               border-top: 1px solid $gray-400;

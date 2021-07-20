@@ -174,7 +174,8 @@ export const CV = () => {
               </div>
               <div>
                 <p className='table__row--job'>
-                  Développement de sites internet :
+                  Développement de sites internet en freelance avec
+                  Samba-Company :
                   <br />
                   <a
                     className='table__row--job-link'
@@ -228,10 +229,6 @@ export const CV = () => {
                     <span className='textPrimary'>Développement :</span> seul en
                     freelance
                   </p>
-                </p>
-                <p className='table__row--job'>
-                  Création de Samba-company, micro-entreprise de création de
-                  site web et dépannage informatique
                 </p>
               </div>
             </div>
