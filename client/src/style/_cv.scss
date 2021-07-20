@@ -38,6 +38,8 @@
         }
 
         &-link {
+          display: flex;
+          align-items: center;
           color: $light;
           transition: all 0.3s ease-in-out;
 
@@ -85,7 +87,7 @@
     }
 
     &__description {
-      padding: 5rem;
+      padding: 2rem 5rem;
       text-indent: 2rem;
       text-align: justify;
     }
@@ -100,22 +102,28 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        min-height: 36rem;
 
         &-title {
-          margin: 3rem;
+          margin-inline: 3rem;
+          margin-top: 1rem;
           padding-left: 1rem ;
           color: $primary;
           font-weight: 400;
           border-radius: 0.2rem;
           border: 1px solid $primary;
+          font-size: 2.5rem;
         }
 
         & .table__row {
+          
+          &:last-child{
+          border-bottom: none;
+          }
+
           display: flex;
           flex-direction: row;
-          padding: 2rem 0;
-          margin: 0 2rem;
+          padding-block: 1rem;
+          margin-inline: 2rem;
           border-bottom: 1px solid $gray-400;
 
           &--date {
@@ -127,14 +135,23 @@
           }
 
           &--job {
-            padding: 1rem;
+            padding: 0.8rem;
             width: 100%;
-            justify-content: stretch;
+            justify-content: center;
             text-align: left;
-
+            
             &-link {
+              display: flex;
+              align-items: center;
+              padding-left: 5%;
+              margin-block: 0.3rem;
               text-decoration: underline;
               transition: all 0.3s ease-in-out;
+              border-top: 1px solid $gray-400;
+
+              &[data='first'] {
+                border-top: none;
+              }
 
               &:hover {
                 color: $primary;
@@ -144,11 +161,12 @@
             }
           }
         }
-
+        
       }
     }
   }
 }
+
 
 @media screen and (max-width: 980px){
   .cvContainer {

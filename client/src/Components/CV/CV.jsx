@@ -5,6 +5,9 @@ import {
   PhoneTwoTone,
   CalendarTodayTwoTone,
   DirectionsCarTwoTone,
+  LanguageTwoTone,
+  GitHub,
+  LinkedIn,
 } from '@material-ui/icons'
 import hadrien from '../../assets/images/hadrien.jpg'
 
@@ -27,21 +30,41 @@ export const CV = () => {
           <div className='profil__table--content'>
             <h3 className='profil__table--content-title'>CONTACT</h3>
             <p>
-              <MailTwoTone />
               <a
                 className='profil__table--content-link'
                 href='mailto:hadrien.samouillan@gmail.com'
               >
+                <MailTwoTone />
                 &nbsp;hadrien.samouillan@gmail.com
               </a>
             </p>
             <p>
-              <PhoneTwoTone />
+              <a
+                className='profil__table--content-link'
+                href='https://github.com/DoubleLama'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <GitHub /> &nbsp;github.com/DoubleLama
+              </a>
+            </p>
+            <p>
+              <a
+                className='profil__table--content-link'
+                href='https://www.linkedin.com/in/hadrien-samouillan/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <LinkedIn />
+                &nbsp;linkedin.com/hadrien-samouillan
+              </a>
+            </p>
+            <p>
               <a
                 className='profil__table--content-link'
                 href='tel:+33627400108'
               >
-                &nbsp;06 27 40 01 08
+                <PhoneTwoTone /> &nbsp;06 27 40 01 08
               </a>
             </p>
           </div>
@@ -77,11 +100,7 @@ export const CV = () => {
           </div>
         </div>
         <div className='abilities__table'>
-          <h2 className='abilities__table--title'>
-            LANGAGES/
-            <br />
-            OUTILS
-          </h2>
+          <h2 className='abilities__table--title'>STACK TECHNIQUE</h2>
           <div className='hobbies__table--content'>
             <p>
               - Ruby, Ruby on Rails
@@ -119,20 +138,29 @@ export const CV = () => {
         </div>
         <div className='infos__description'>
           <p>
-            Féru d&apos;informatique depuis l&apos;adolescence, j&apos;ai osé
-            récemment l&apos;expérience de vivre de ma passion. Diplômé de la
-            formation « Développeur » chez The Hacking Project depuis 1 an, je
-            me suis lancé dans la création de sites internet en suivant.
+            Passionné d&apos;informatique depuis l&apos;adolescence, j&apos;ai
+            osé récemment l&apos;expérience de vivre de ma passion. Diplômé de
+            la formation « Développeur » chez The Hacking Project depuis plus
+            d&apos;un an, je me suis lancé dans la création de sites internet en
+            suivant.
           </p>
+          <br />
           <p>
             Après quelques expériences d&apos;élaboration de sites, j&apos;ai
             créé une micro-entreprise de conception de sites internet et de
             dépannage informatique il y a quelques mois.
           </p>
+          <br />
           <p>
             Je m&apos;épanouis pleinement dans mon travail, j&apos;apprends de
             nouvelles notions chaque jour, j&apos;aime le travail en équipe et
             j&apos;ai besoin de challenges.
+          </p>
+          <br />
+          <p>
+            Egalement passionné de sports, de nature et d&apos;écologie, mon
+            objectif serait de travailler dans un de ces secteurs
+            d&apos;activité.
           </p>
         </div>
         <div className='infos__body'>
@@ -148,35 +176,58 @@ export const CV = () => {
                 <p className='table__row--job'>
                   Développement de sites internet :
                   <br />
-                  &nbsp; - &nbsp;
                   <a
                     className='table__row--job-link'
                     href='https://www.atelierjk.fr'
                     target='_blank'
+                    data='first'
                     rel='noreferrer'
                   >
-                    atelierjk.fr
+                    <LanguageTwoTone />
+                    &nbsp;www.atelierjk.fr
                   </a>
-                  <br />
-                  &nbsp; - &nbsp;
+                  <p>
+                    <span className='textPrimary'>Stack :</span> Rails, React,
+                    Redux, GitHub, PostgresSQL, Cloudinary, Figma, Trello
+                  </p>
+                  <p>
+                    <span className='textPrimary'>Développement :</span> seul en
+                    freelance
+                  </p>
                   <a
                     className='table__row--job-link'
                     href='https://www.cotoune.com'
                     target='_blank'
                     rel='noreferrer'
                   >
-                    cotoune.com
+                    <LanguageTwoTone />
+                    &nbsp;www.cotoune.com
                   </a>
-                  <br />
-                  &nbsp; - &nbsp;
+                  <p>
+                    <span className='textPrimary'>Stack :</span> Rails, React,
+                    Redux, GitHub, PostgresSQL, Cloudinary, Figma, Trello
+                  </p>
+                  <p>
+                    <span className='textPrimary'>Développement :</span> seul en
+                    freelance
+                  </p>
                   <a
                     className='table__row--job-link'
                     href='https://www.samba-company.com'
                     target='_blank'
                     rel='noreferrer'
                   >
-                    samba-company.com
+                    <LanguageTwoTone />
+                    &nbsp;www.samba-company.com
                   </a>
+                  <p>
+                    <span className='textPrimary'>Stack :</span> Rails, React,
+                    Redux, GitHub, PostgresSQL, Cloudinary
+                  </p>
+                  <p>
+                    <span className='textPrimary'>Développement :</span> seul en
+                    freelance
+                  </p>
                 </p>
                 <p className='table__row--job'>
                   Création de Samba-company, micro-entreprise de création de
@@ -192,25 +243,80 @@ export const CV = () => {
                 <p className='table__row--job'>
                   Développement de sites internet :
                   <br />
-                  &nbsp; - &nbsp;
                   <a
                     className='table__row--job-link'
                     href='https://www.bodylicious-resa.fr'
                     target='_blank'
+                    data='first'
                     rel='noreferrer'
                   >
-                    bodylicious-resa.fr
+                    <LanguageTwoTone />
+                    &nbsp;www.bodylicious-resa.fr
                   </a>
-                  <br />
-                  &nbsp; - &nbsp;
+                  <p>
+                    <span className='textPrimary'>Stack :</span> Rails, React,
+                    Redux, GitHub, PostgresSQL, Cloudinary
+                  </p>
+                  <p>
+                    <span className='textPrimary'>Développement :</span> seul en
+                    freelance
+                  </p>
                   <a
                     className='table__row--job-link'
                     href='https://www.frenchcountryhouses.com'
                     target='_blank'
                     rel='noreferrer'
                   >
-                    frenchcountryhouses.com
+                    <LanguageTwoTone />
+                    &nbsp;www.frenchcountryhouses.com
                   </a>
+                  <p>
+                    <span className='textPrimary'>Stack :</span> Rails, React,
+                    Redux, GitHub, PostgresSQL, AWS
+                  </p>
+                  <p>
+                    <span className='textPrimary'>Développement :</span> en
+                    équipe de 2 personnes, méthode AGILE
+                  </p>
+                </p>
+                <p className='table__row--job'>
+                  Projets d&apos;étude :
+                  <br />
+                  <a
+                    className='table__row--job-link'
+                    href='https://simpleloc.herokuapp.com'
+                    target='_blank'
+                    data='first'
+                    rel='noreferrer'
+                  >
+                    <LanguageTwoTone />
+                    &nbsp;www.simpleloc.com
+                  </a>
+                  <p>
+                    <span className='textPrimary'>Stack :</span> Rails, React,
+                    GitLab, PostgresSQL, Cloudinary
+                  </p>
+                  <p>
+                    <span className='textPrimary'>Développement :</span> en
+                    équipe de 5 personnes, méthode AGILE
+                  </p>
+                  <a
+                    className='table__row--job-link'
+                    href='https://onlybloc.herokuapp.com'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <LanguageTwoTone />
+                    &nbsp;www.onlybloc.com
+                  </a>
+                  <p>
+                    <span className='textPrimary'>Stack :</span> Rails, GitHub,
+                    PostgresSQL, Trello
+                  </p>
+                  <p>
+                    <span className='textPrimary'>Développement :</span> en
+                    équipe de 4 personnes, méthode AGILE
+                  </p>
                 </p>
               </div>
             </div>
