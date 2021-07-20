@@ -106,6 +106,7 @@ export const CV = () => {
               - Ruby, Ruby on Rails
               <br />- HTML, CSS (Sass)
               <br />- Javascript, React.js (hooks, redux)
+              <br />- CI/Cd (Jest, Rspec ...)
               <br />- Git
               <br />- PostgreSQL
             </p>
@@ -190,7 +191,8 @@ export const CV = () => {
                   </a>
                   <p>
                     <span className='textPrimary'>Stack :</span> Rails, React,
-                    Redux, GitHub, PostgresSQL, Cloudinary, Figma, Trello
+                    Redux, GitHub, PostgresSQL, Cloudinary, Figma, Trello,
+                    Rspec, Jest
                   </p>
                   <p>
                     <span className='textPrimary'>Développement :</span> seul en
@@ -207,7 +209,8 @@ export const CV = () => {
                   </a>
                   <p>
                     <span className='textPrimary'>Stack :</span> Rails, React,
-                    Redux, GitHub, PostgresSQL, Cloudinary, Figma, Trello
+                    Redux, GitHub, PostgresSQL, Cloudinary, Figma, Trello,
+                    Rspec, Jest
                   </p>
                   <p>
                     <span className='textPrimary'>Développement :</span> seul en
