@@ -158,9 +158,10 @@ export const CV = () => {
           </p>
           <br />
           <p>
-            Egalement passionné de sports, de nature et d&apos;écologie, mon
-            objectif serait de travailler dans un de ces secteurs
-            d&apos;activité.
+            J&apos;ai une préférence particulière pour les secteurs
+            d&apos;activités touchant à la santé, l&apos;aide à la personne, la
+            nature, l&apos;écologie ou encore le sport. Mon objectif serait de
+            travailler dans un de ces domaines.
           </p>
         </div>
         <div className='infos__body'>
