@@ -116,8 +116,9 @@ export const CV = () => {
         <div className='hobbies__table'>
           <h2 className='hobbies__table--title'>LOISIRS</h2>
           <div className='hobbies__table--content'>
-            <p>Sports: Crossfit, wakeboard, golf, escalade</p>
-            <p>Musique: Bassiste dans 2 groupes de musique</p>
+            <p>- Sports: Crossfit, wakeboard, golf, escalade</p>
+            <br />
+            <p>- Musique: Bassiste dans 2 groupes de musique</p>
           </div>
         </div>
       </div>
@@ -158,7 +159,7 @@ export const CV = () => {
           <p>
             J&apos;ai une préférence particulière pour les secteurs
             d&apos;activités touchant à la santé, l&apos;aide à la personne, la
-            nature, l&apos;écologie, aux services publics ou encore le sport.
+            nature, l&apos;écologie, aux services publics ou encore au sport.
             Mon objectif serait de travailler dans un de ces domaines.
           </p>
         </div>
@@ -172,7 +173,7 @@ export const CV = () => {
                 <p>2021</p>
               </div>
               <div>
-                <p className='table__row--job'>
+                <div className='table__row--job'>
                   Développement de sites internet en freelance avec
                   Samba-Company :
                   <br />
@@ -230,7 +231,7 @@ export const CV = () => {
                     <span className='textPrimary'>Développement :</span> seul en
                     freelance
                   </p>
-                </p>
+                </div>
               </div>
             </div>
             <div className='table__row'>
@@ -238,7 +239,7 @@ export const CV = () => {
                 <p>2020</p>
               </div>
               <div>
-                <p className='table__row--job'>
+                <div className='table__row--job'>
                   Développement de sites internet :
                   <br />
                   <a
@@ -276,8 +277,8 @@ export const CV = () => {
                     <span className='textPrimary'>Développement :</span> en
                     équipe de 2 personnes, méthode AGILE
                   </p>
-                </p>
-                <p className='table__row--job'>
+                </div>
+                <div className='table__row--job'>
                   Projets d&apos;étude :
                   <br />
                   <a
@@ -315,7 +316,7 @@ export const CV = () => {
                     <span className='textPrimary'>Développement :</span> en
                     équipe de 4 personnes, méthode AGILE
                   </p>
-                </p>
+                </div>
               </div>
             </div>
             <div className='table__row'>
