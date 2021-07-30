@@ -89,6 +89,7 @@ export const CV = () => {
             <p>- Analyse des besoins (clients/utilisateurs)</p>
             <p>- Capacité d&apos;apprentissage</p>
             <p>- Travail d&apos;équipe</p>
+            <p>- Engagement</p>
           </div>
         </div>
         <div className='abilities__table'>
@@ -106,7 +107,7 @@ export const CV = () => {
               - Ruby, Ruby on Rails
               <br />- HTML, CSS (Sass)
               <br />- Javascript, React.js (hooks, redux)
-              <br />- CI/Cd (Jest, Rspec ...)
+              <br />- CI/Cd (Jest, Cypress, Rspec ...)
               <br />- Git
               <br />- PostgreSQL
             </p>
@@ -115,12 +116,8 @@ export const CV = () => {
         <div className='hobbies__table'>
           <h2 className='hobbies__table--title'>LOISIRS</h2>
           <div className='hobbies__table--content'>
-            <h3 className='hobbies__table--content-title'>SPORTS</h3>
-            <p>Crossfit, wakeboard, golf, escalade</p>
-          </div>
-          <div className='hobbies__table--content'>
-            <h3 className='hobbies__table--content-title'>MUSIQUE</h3>
-            <p>Bassiste dans 2 groupes de musique</p>
+            <p>Sports: Crossfit, wakeboard, golf, escalade</p>
+            <p>Musique: Bassiste dans 2 groupes de musique</p>
           </div>
         </div>
       </div>
