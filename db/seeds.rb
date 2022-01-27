@@ -55,9 +55,9 @@ Creation.create([
                   { title: 'Hébergement du site*', description: 'Comprend la maintenance du site à hauteur de 16h/an (cumulable)',
                     price: '300€/an' },
                   { title: 'Création de site vitrine', description: 'Temps de création entre 2 jours et une semaine selon la complexité',
-                    price: 'à partir de 500€' },
+                    price: 'à partir de 600€' },
                   { title: 'Site web plus complexe Ruby on Rails et base de donnée',
-                    description: 'Il faut compter au minimum 1 mois (site E-commerce, gestion de rdv, gestion de réservation,...)', price: '300€/j' },
+                    description: 'Il faut compter au minimum 1 mois (site E-commerce, gestion de rdv, gestion de réservation,...)', price: '350€/j' },
                   { title: 'Site web plus complexe Ruby on Rails, React.js et base de donnée',
-                    description: 'Il faut compter au minimum 1 mois (site E-commerce, gestion de rdv, gestion de réservation,...)', price: '350€/j' }
+                    description: 'Il faut compter au minimum 1 mois (site E-commerce, gestion de rdv, gestion de réservation,...)', price: '380€/j' }
                 ])
